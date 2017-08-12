@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$(this).on("scroll",function(){
+		if($(this).scrollTop()>568){
+			$('.clearfix').addClass('sticky');
+		}else{
+			$('.clearfix').removeClass('sticky');
+		}
+	});
+});
