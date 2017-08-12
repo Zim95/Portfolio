@@ -1,9 +1,39 @@
-$(document).ready(function(){
-	$(this).on("scroll",function(){
-		if($(this).scrollTop>568){
-			
-		}else{
-			
-		}
-	});
-});
+.nav_menu{
+	background:#bdc3c7;
+	color:white;
+}
+.nav_menu ul li{
+	list-style:none;
+	font-family:Helvetica;
+	font-weight:bold;
+}
+.nav_menu ul a{
+	text-align:center;
+	color:white;
+	padding:10px;
+	text-align:center;
+}
+.nav_menu ul a:hover{
+	background:#7f8c8d;
+	text-align:center;
+	color:white;
+	padding:10px;
+	text-align:center;
+	text-decoration:none;
+}
+.right_side_menu{
+	float:right;
+}
+.left_side_menu{
+	float:left;
+}
+.sticky{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background:#7f8c8d;
+}
+.sticky li a:hover{
+	background:#bdc3c7;
+}
