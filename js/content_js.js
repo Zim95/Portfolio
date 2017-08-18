@@ -13,6 +13,7 @@ $(document).ready(function(){
 			$('.content-skills').css('display','none');
 			$('.content-contact').css('display','none');
 			$('.content-hire').css('display','none');
+			$('#changetext').html("You are at the Home page");
 		}else if(n==2){
 			$('.content-abt').slideDown();
 			$('.content-home').css('display','none');
@@ -20,6 +21,7 @@ $(document).ready(function(){
 			$('.content-skills').css('display','none');
 			$('.content-contact').css('display','none');
 			$('.content-hire').css('display','none');
+			$('#changetext').html("You are at the About me page");
 		}else if(n==3){
 			$('.content-skills').slideDown();
 			$('.content-home').css('display','none');
@@ -27,6 +29,7 @@ $(document).ready(function(){
 			$('.content-skills').css('display','block');
 			$('.content-contact').css('display','none');
 			$('.content-hire').css('display','none');
+			$('#changetext').html("You are at the Skills page");
 		}else if(n==4){
 			$('.content-contact').slideDown();
 			$('.content-home').css('display','none');
@@ -34,6 +37,7 @@ $(document).ready(function(){
 			$('.content-skills').css('display','none');
 			$('.content-contact').css('display','block');
 			$('.content-hire').css('display','none');
+			$('#changetext').html("You are at the Contact me page");
 		}else if(n==5){
 			$('.content-hire').slideDown();
 			$('.content-home').css('display','none');
@@ -41,6 +45,7 @@ $(document).ready(function(){
 			$('.content-skills').css('display','none');
 			$('.content-contact').css('display','none');
 			$('.content-hire').css('display','block');
+			$('#changetext').html("You are at the Hire me page");
 		}else{
 			console.log('Not a valid slider option');
 		}
@@ -63,3 +68,5 @@ $(document).ready(function(){
 		slider(5);
 	});
 });
+
+//inclulde prefered location for work to bangalore

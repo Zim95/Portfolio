@@ -1,5 +1,6 @@
 
 #hero_slider{
+	width:100%;
 	position:fixed;
 	z-index:1;
 }
@@ -1092,7 +1093,31 @@ p{
 	background:#ecf0f1;
 }
 #aboutsite div{
-	padding:20px;
+	width:100%;
+	padding-top:20px;
+	padding-bottom:20px;
 	background:#bdc3c7;
-	margin:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education{
+	margin-bottom:10px;
+	margin-top:10px;
+	background:#ecf0f1;
+}
+#dl1,#wrp,#dl2{
+	background:#bdc3c7;
+}
+dt,dd{
+	font-size:1.5em;
+}
+th{
+	font-size:1.5em;
+	font-weight:boold;
+}
+td{
+	font-size:1.4em;
+}
+#tabl{
+	background:#bdc3c7;
 }
