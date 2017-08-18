@@ -1026,15 +1026,35 @@ p{
 
 /*designing the navigation bar*/
 .navbar-inverse{
+	width:100%;
 	position:relative;
 	z-index:10;
 	border-radius:0px;
 	margin:0px;
+	
+}
+#myNavbar ul li{
+	padding-top:15px; 
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	font-family: Helvetica;
+	color: white;
+	cursor:pointer;
+}
+#myNavbar ul li:hover{
+	padding-top:15px; 
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	font-family: Helvetica;
+	color: white;
+	cursor:pointer;
+	background:#000;
 }
 .content{
 	position:relative;
 	z-index:9;
-	height:2000px;
 	background:white;
 }
 .sticky{
@@ -1048,4 +1068,31 @@ p{
 }
 .nav_extension{
 	padding:20px;
+}
+.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+	position:relative;
+	display:none;
+	transition:display 1.0s ease;
+}
+#work_header,#work{
+	background:#ecf0f1;
+	margin-bottom:10px;
+}
+#work_frontend,#work_backend{
+	background:#bdc3c7;
+	margin-bottom:10px;
+}
+#work_frontend{
+	padding-bottom:15px;
+}
+#work_footer{
+	padding:10px;
+}
+#aboutsite{
+	background:#ecf0f1;
+}
+#aboutsite div{
+	padding:20px;
+	background:#bdc3c7;
+	margin:10px;
 }

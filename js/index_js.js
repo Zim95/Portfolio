@@ -25,21 +25,20 @@ $(document).ready(function(){
 		
 		//getting the scroll value
 		var scroll_val = $(this).scrollTop();
-		console.log(scroll_val);
+		//console.log(scroll_val);
 		
 		//margin bottom all captions by scroll val
 		$('.carousel-caption').css('margin-bottom',scroll_val);
+		
 		//compare value
 		if($(this).scrollTop()>carousel_height){
 			$(".navbar-inverse").addClass('sticky');
 			$('.nav_extension').slideDown();
 			$('.nav_extension').css('display','block');
-			$('.nav_placeholder').css('height',$('.navbar-inverse').outerHeight(true));
 		}else{
 			$(".navbar-inverse").removeClass('sticky');
 			$('.nav_extension').slideUp();
 			$('.navbar-extension').css('display','none');
-			$('.nav_placeholder').css('height',nav_height);
 		}
 	});
 	
