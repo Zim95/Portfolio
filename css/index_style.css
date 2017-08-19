@@ -1,4 +1,6 @@
-
+body{
+	height:1500px;
+}
 #hero_slider{
 	width:100%;
 	position:fixed;
@@ -1057,6 +1059,8 @@ p{
 	position:relative;
 	z-index:9;
 	background:white;
+	overflow:scroll;
+	overflow-x:hidden;
 }
 .sticky{
 	position:fixed;
@@ -1100,7 +1104,7 @@ p{
 	margin-top:10px;
 	margin-bottom:10px;
 }
-#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education{
+#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
 	margin-bottom:10px;
 	margin-top:10px;
 	background:#ecf0f1;

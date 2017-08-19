@@ -3,6 +3,15 @@ $(document).ready(function(){
 	//width of viewport for left position
 	var viewport_width = $(window).width();
 	
+	//default 
+	$('.content-home').slideDown();
+	$('.content-home').css('display','block');
+	$('.content-abt').css('display','none');
+	$('.content-skills').css('display','none');
+	$('.content-contact').css('display','none');
+	$('.content-hire').css('display','none');
+	$('#changetext').html("You are at the Home page");
+	
 	//function to set the margin accrodingly to slide the content divs
 	function slider(n){
 		var margin_offset;
