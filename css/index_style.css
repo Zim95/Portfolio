@@ -1121,3 +1121,7 @@ td{
 #tabl{
 	background:#bdc3c7;
 }
+#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+	background:#ecf0f1;
+	margin:10px;
+}
