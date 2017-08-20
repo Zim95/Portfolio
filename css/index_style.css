@@ -1,5 +1,5 @@
 body{
-	height:1500px;
+	height:1000px;
 }
 #hero_slider{
 	width:100%;
@@ -1057,6 +1057,7 @@ p{
 }
 .content{
 	position:relative;
+	width:100%;
 	z-index:9;
 	background:white;
 	overflow:scroll;
@@ -1132,4 +1133,37 @@ td{
 	background:#ecf0f1;
 	margin:10px;
 	padding:20px;
+}
+#contact-header{
+	background:#ecf0f1;
+	margin:10px;
+	padding:20px;
+}
+#contact-content{
+	background:#ecf0f1;
+	padding:20px;
+	margin:10px 10px 0px 10px;
+}
+#contact-footer{
+	background:#ecf0f1;
+	padding:20px;
+	margin:0px 10px 10px 10px;
+}
+
+/*Design the social media icons*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+	color:white;
+	background:#262626;
+	border-radius:50%;
+}
+.fa:hover, .fa:active, .fa:visited{
+    opacity: 0.7;
+	color:white;
+	text-decoration:none;
+	background:#000;
 }
