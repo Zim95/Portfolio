@@ -1,0 +1,6 @@
+formals-1500,3 shirts,2 pants,2 shoes 1500x7 = 10,500
+place = 8000-10000
+flight ticket = 5000-6000 
+money = 15,000
+
+15 thou+6 thou+tenthou+10thou

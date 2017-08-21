@@ -1167,3 +1167,10 @@ td{
 	text-decoration:none;
 	background:#000;
 }
+
+/*Hire page design*/
+#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+	background:#ecf0f1;
+	margin:10px;
+	padding:20px;
+}
