@@ -3,4 +3,11 @@ place = 8000-10000
 flight ticket = 5000-6000 
 money = 15,000
 
+
+internet ko paisa 500 
+
 15 thou+6 thou+tenthou+10thou
+
+/*
+	
+*/

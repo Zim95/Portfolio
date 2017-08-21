@@ -1,5 +1,7 @@
+
 body{
-	height:1000px;
+	width:100%;
+	overflow-x:hidden;
 }
 #hero_slider{
 	width:100%;
@@ -132,6 +134,168 @@ p{
 		font-size:1.2em;
 		font-family:Helvetica;
 	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
+	}
 }
 
 /*1200-1015*/
@@ -188,6 +352,168 @@ p{
 	p{
 		font-size:1.2em;
 		font-family:Helvetica;
+	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
 	}
 }
 
@@ -246,6 +572,168 @@ p{
 		font-size:1.2em;
 		font-family:Helvetica;
 	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
+	}
 }
 
 /*996-960*/
@@ -296,6 +784,168 @@ p{
 	p{
 		font-size:1.0em;
 		font-family:Helvetica;
+	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
 	}
 }
 
@@ -348,6 +998,168 @@ p{
 		font-size:1.0em;
 		font-family:Helvetica;
 	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
+	}
 }
 
 /*881-847*/
@@ -399,6 +1211,168 @@ p{
 		font-size:0.8em;
 		font-family:Helvetica;
 	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
+	}
 }
 
 /*846-802*/
@@ -449,6 +1423,168 @@ p{
 		font-size:0.8em;
 		font-family:Helvetica;
 	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
+	}
 }
 
 /*801-768*/ 
@@ -496,6 +1632,168 @@ p{
 	p{
 		font-size:0.8em;
 		font-family:Helvetica;
+	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
 	}
 }
 
@@ -545,6 +1843,168 @@ p{
 		font-size:0.8em;
 		font-family:Helvetica;
 	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
+	}
 }
 
 /*704-673*/
@@ -592,6 +2052,168 @@ p{
 	p{
 		font-size:0.8em;
 		font-family:Helvetica;
+	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
 	}
 }
 
@@ -641,6 +2263,168 @@ p{
 		font-size:0.8em;
 		font-family:Helvetica;
 	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
+	}
 }
 
 /*620-541*/
@@ -688,6 +2472,168 @@ p{
 	p{
 		font-size:0.8em;
 		font-family:Helvetica;
+	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
 	}
 }
 
@@ -737,6 +2683,168 @@ p{
 		font-size:0.8em;
 		font-family:Helvetica;
 	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
+	}
 }
 
 /*510-481*/
@@ -784,6 +2892,168 @@ p{
 	p{
 		font-size:0.8em;
 		font-family:Helvetica;
+	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
 	}
 }
 
@@ -833,6 +3103,168 @@ p{
 		font-size:0.8em;
 		font-family:Helvetica;
 	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
+	}
 }
 
 /*322-262*/
@@ -880,6 +3312,168 @@ p{
 	p{
 		font-size:0.7em;
 		font-family:Helvetica;
+	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
 	}
 }
 
@@ -929,6 +3523,168 @@ p{
 		font-size:0.7em;
 		font-family:Helvetica;
 	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
+	}
 }
 
 /*224-176*/
@@ -976,6 +3732,168 @@ p{
 	p{
 		font-size:0.7em;
 		font-family:Helvetica;
+	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
 	}
 }
 
@@ -1025,9 +3943,178 @@ p{
 		font-size:0.7em;
 		font-family:Helvetica;
 	}
+	.navbar{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+	}
+	.navbar-inverse{
+		width:100%;
+		position:relative;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		
+	}
+	#myNavbar ul li{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+	}
+	#myNavbar ul li:hover{
+		padding-top:15px; 
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		font-family: Helvetica;
+		color: white;
+		cursor:pointer;
+		background:#000;
+	}
+	.content{
+		position:relative;
+		width:100%;
+		z-index:9;
+		background:white;
+		overflow:scroll;
+		overflow-x:hidden;
+	}
+	.sticky{
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:10;
+		border-radius:0px;
+		margin:0px;
+		width:100%;
+	}
+	.nav_extension{
+		padding:20px;
+	}
+	.content-home,.content-abt,.content-skills,.content-contact,.content-hire{
+		position:relative;
+		display:none;
+		transition:display 1.0s ease;
+	}
+	#work_header,#work{
+		background:#ecf0f1;
+		margin-bottom:10px;
+	}
+	#work_frontend,#work_backend{
+		background:#bdc3c7;
+		margin-bottom:10px;
+	}
+	#work_frontend{
+		padding-bottom:15px;
+	}
+	#work_footer{
+		padding:10px;
+	}
+	#aboutsite{
+		background:#ecf0f1;
+	}
+	#aboutsite div{
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:#bdc3c7;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#abtme_header,#abtme_summary,#abtme_objectives,#abtme_hobbies,#abtme_education,#abtme-languages{
+		margin-bottom:10px;
+		margin-top:10px;
+		background:#ecf0f1;
+		padding:20px;
+	}
+	#dl1,#wrp,#dl2{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	dt,dd{
+		font-size:1.5em;
+	}
+	th{
+		font-size:1.5em;
+		font-weight:boold;
+	}
+	td{
+		font-size:1.4em;
+	}
+	#tabl{
+		background:#bdc3c7;
+		padding:10px;
+	}
+	#skills_header, #skills_frontend, #skills_backend, #skills_api, #skills_mvc, #skills_dtt, #skills_version,#skills_programming,#skills_paradigm,#skills_project{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-header{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+	#contact-content{
+		background:#ecf0f1;
+		padding:20px;
+		margin:10px 10px 0px 10px;
+	}
+	#contact-footer{
+		background:#ecf0f1;
+		padding:20px;
+		margin:0px 10px 10px 10px;
+	}
+
+	/*Design the social media icons*/
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		background:#262626;
+		border-radius:50%;
+	}
+	.fa:hover, .fa:active, .fa:visited{
+		opacity: 0.7;
+		color:white;
+		text-decoration:none;
+		background:#000;
+	}
+
+	/*Hire page design*/
+	#hire-header,#hire-hire,#hire-ratings,#hire-pagehit,#hire-preferences{
+		background:#ecf0f1;
+		margin:10px;
+		padding:20px;
+	}
+
+	/*Footer style*/
+	footer{
+		position:relative;
+		z-index:9;
+		background:#262626;
+		color:#404040;
+		width:100%;
+	}
 }
 
 /*designing the navigation bar*/
+.navbar{
+	width:100%;
+	position:relative;
+	z-index:10;
+	border-radius:0px;
+	margin:0px;
+}
 .navbar-inverse{
 	width:100%;
 	position:relative;
@@ -1060,8 +4147,6 @@ p{
 	width:100%;
 	z-index:9;
 	background:white;
-	overflow:scroll;
-	overflow-x:hidden;
 }
 .sticky{
 	position:fixed;
@@ -1173,4 +4258,13 @@ td{
 	background:#ecf0f1;
 	margin:10px;
 	padding:20px;
+}
+
+/*Footer style*/
+footer{
+	position:relative;
+	z-index:9;
+	background:#262626;
+	color:#404040;
+	width:100%;
 }
