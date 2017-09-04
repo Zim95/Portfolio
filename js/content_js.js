@@ -12,7 +12,7 @@ $(document).ready(function(){
 	$('.content-hire').css('display','none');
 	$('#changetext').html("You are at the Home page");
 	
-	//function to set the margin accrodingly to slide the content divs
+	//function to set the margin accordingly to slide the content divs
 	function slider(n){
 		var margin_offset;
 		if(n==1){

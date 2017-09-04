@@ -4264,7 +4264,8 @@ td{
 footer{
 	position:relative;
 	z-index:9;
-	background:#262626;
+	background-image:url('../img/bg-footer.png');
+	background-size:100% 100%;
 	color:#404040;
 	width:100%;
 }

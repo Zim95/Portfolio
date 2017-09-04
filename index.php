@@ -1,3 +1,5 @@
+<?php 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +49,9 @@
 					<div class="carousel-caption" id="caption2">
 						<h1 id="header2">Contact me</h1>
 						<h2 class="semi2">To contact me, you can visit my contacts page. You can also visit my social media profiles (add me as a friend).</h2>
-						<button class="btn" id="contact-btn">Contact Me</button>
+						
+						<!--This is not working-->
+						<a class="btn btn-default" id="contact-btn" href="#content_contact">Contact Me</a>
 					</div>
 				</div>
 				<div class="item">
@@ -55,7 +59,8 @@
 					<div class="carousel-caption" id="caption3">
 						<h1 id="header3">Hire Me?</h1>
 						<h2 class="semi3">Trust me, you will not regret this</h2>
-						<button class="btn" id="contact-btn">Hire Me</button>
+						<!--herealso-->
+						<a href="#" class="btn btn-default" align="center" data-toggle="modal" data-target="#hire_modal" type="button" id="hire-send">Hire me?</a>
 					</div>
 				</div>
 			</div>
@@ -77,7 +82,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button class="close" data-dismiss="modal">x</button>
+						<button class="close" data-dismiss="modal" id="contact-modal-close">x</button>
 						<h1 class="modal-title" align="center" style="font-size:1.5em;" id="contact-modal-header-h1"></h1>
 						<h2 class="modal-title" align="center" style="font-size:0.8em;" id="contact-modal-header-h2"></h2>
 					</div>
@@ -100,6 +105,63 @@
 						</div>
 						<div id="modal-body-three" style="display:none;">
 							<h2 align="center" id="contact-modal-dp3-h2" style="font-size:0.8em;"></h2>
+						</div>
+					</div>
+				</div><!--End modal content-->
+			</div><!--End modal dialog-->
+		</div><!--End modal-->
+		<!--Modal end-->
+		
+		<!--Modal For hire-->
+		<div class="modal fade" id="hire_modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal" id="hire-modal-close">x</button>
+						<h1 class="modal-title" align="center" style="font-size:1.5em;" id="hire-modal-header-h1">Hire Me</h1>
+						<h2 class="modal-title" align="center" style="font-size:0.8em;" id="hire-modal-header-h2">Please fill in your credentials.</h2>
+					</div>
+					<div class="modal-body">
+						<div id="hire-modal-body-one" style="display:block;">
+							<form class="form-horizontal" style="padding:20px;" id="hire-modal-form">
+								<div class="form-group">
+									<label for="email-code" class="col-xs-3 control-label">Email:</label>
+									<div class="col-xs-9">
+										<input type="text" class="form-control" name="email-code" id="email-code-input" placeholder="Email"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="workdef-code" class="col-xs-3 control-label">Work:</label>
+									<div class="col-xs-9">
+										<input type="text" class="form-control" name="workdef-code" id="workdef-code-input" placeholder="Please enter work Description.Please do not begin with a blank space."/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="skillsreq-code" class="col-xs-3 control-label">Skills:</label>
+									<div class="col-xs-9">
+										<input type="text" class="form-control" name="skillreq-code" id="skillsreq-code-input" placeholder="Please type the skills required.Please do not begin with a blank space."/>
+									</div>
+								</div>
+								<div class="col-xs-3 col-xs-offset-3">
+									<a href="#" type="button" class="btn btn-default" align="center" style="background:#000;color:white;" id="hire-form-submit">Submit</a>
+								</div>
+							</form>
+						</div>
+						<div id="hire-modal-body-two" style="display:none;">
+							<form class="form-horizontal" style="padding:20px;" id="hire-modal-form">
+								<div class="form-group">
+									<label for="hire-confirm-code" class="col-xs-3 control-label">Code:</label>
+									<div class="col-xs-9">
+										<input type="text" class="form-control" name="hire-confirm-code" id="hire-confirm-code-input" placeholder="Enter confirmation code"/>
+									</div>
+								</div>
+								<div class="col-xs-3 col-xs-offset-3">
+									<a href="#" type="button" class="btn btn-default" align="center" style="background:#000;color:white;" id="hire-confirm-submit">Submit</a>
+								</div>
+							</form>
+						</div>
+						<div id="hire-modal-body-three" style="display:none;">
+							<h2 align="center" id="hire-modal-dp3-h2" style="font-size:0.8em;"></h2>
 						</div>
 					</div>
 				</div><!--End modal content-->
@@ -709,19 +771,12 @@
 													<table class="table">
 														<thead>
 															<tr>
-																<th>Email</th>
-																<th>Name</th>
-																<th>Work</th>
-																<th>Skills Required</th>
+																<th><p align="center">Email</p></th>
+																<th><p align="center">Work</p></th>
+																<th><p align="center">Skills Required</p></th>
 															</tr>
 														</thead>
 														<tbody id="hire-history-table-row">
-															<tr>
-																<td></td>
-																<td></td>
-																<td></td>
-																<td></td>
-															</tr>
 														</tbody>
 													</table>	  
 												</div>
@@ -730,8 +785,10 @@
 									</div>
 								</div>
 							</div>
+							<!--here-->
+							
 							<div class="row" id="hire-stats-button" style="margin:20px;padding:20px;">
-								<button class="btn" style="opacity:1.0;background:#262626;color:#fff;">Hire Me?</button>
+								<a href="#" class="btn btn-default" align="center" data-toggle="modal" data-target="#hire_modal" type="button" id="hire-send" style="opacity:1.0;background:#262626;color:#fff;">Hire me?</a>
 							</div>
 						</div>
 					</div>
@@ -751,16 +808,16 @@
 								<!-- Tab Panes-->
 								<div class="tab-content responsive" style="padding:20px;">
 									<div role="tabpanel" class="tab-pane active" id="hire-seerate">
-										Ratings
+										Ratings - Sorry this area is under construction
 									</div>
 									<div role="tabpanel" class="tab-pane" id="hire-ratework">
-										Rate My Work
+										Rate My Work - Sorry this area is under construction
 									</div>
 									<div role="tabpanel" class="tab-pane" id="hire-readreviews">
-										Read Reviews
+										Read Reviews - Sorry this area is under construction
 									</div>
 									<div role="tabpanel" class="tab-pane" id="hire-addreviews">
-										Write Reviews
+										Write Reviews - Sorry this area is under construction
 									</div>
 								</div>
 							</div>
@@ -787,7 +844,21 @@
 		<footer>
 			<div class="row">
 				<div class="col-xs-7 col-xs-offset-2" style="padding:20px;">
-					<h1 align="center">Thanks for visiting</h1>
+					<h1 align="center">Thanks for visiting.</h1>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<h2 align="center" style="font-size:1.3em;margin-top:20px;padding:20px;">This site is under maintainance. I am really sorry about the bugs. They will be fixed shortly.</h2>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<h2 align="center" style="font-size:1.3em;margin-top:20px;padding:20px;">New Features are being added to the site so stay tuned. Keep hiring.</h2>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<h2 align="center" style="font-size:1.3em;margin-top:20px;padding:20px;">This is not the complete site. I am working on the features.</h2>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<h2 align="center" style="font-size:1.3em;margin-top:20px;padding:20px;">First five hirers will get a 50% discount.</h2>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
@@ -805,5 +876,20 @@
 		
 		<!--custom javascript code for contact-modal-->
 		<script src="js/contact_modal_js.js"></script>
+		
+		<!--custom javascript code for contact-close-->
+		<script src="js/contact_close.js"></script>
+		
+		<!--custom javascript code for hire-modal-->
+		<script src="js/hire_modal_js.js"></script>
+		
+		<!--custom javascript code for hire-close-->
+		<script src="js/hire_close.js"></script>
+		
+		<!--hire count-->
+		<script src="js/hire_count.js"></script>
+		
+		<!--hire history-->
+		<script src="js/hire_history.js"></script>
 	</body>
 </html>
