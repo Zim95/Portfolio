@@ -96,7 +96,7 @@
 									</div>
 								</div>
 								<div class="col-xs-3 col-xs-offset-3">
-									<button type="submit" name="submit" class="btn btn-default" align="center" style="background:#000;color:white;">Go</button>
+									<a href="#" name="sub" class="btn btn-default" align="center" style="background:#000;color:white;" id="confirm-submit">Go</a>
 								</div>
 							</form>
 						</div>

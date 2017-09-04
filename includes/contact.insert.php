@@ -2,9 +2,9 @@
 	require('contact.insert.class.php');
 	
 	//ci stands for contact insert
-	$name = 'Namah';
-	$email = 'shresthanamah@gmail.com';
-	$message = 'Please work';
+	$name = $_POST['name'];
+	$email =$_POST['email'];
+	$message =$_POST['message'];
 	
 	$ci_obj = new contactInsert($name,$email,$message);
 	

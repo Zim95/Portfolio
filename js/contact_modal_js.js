@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	//var confirm_code = 0;
+	var confirm_code = 0;
 	$("#contact-send").click(function(){
 		var name = $("#contact-name").val();
 		var email = $("#contact-email").val();
@@ -22,19 +22,6 @@ $(document).ready(function(){
 			$('#modal-body-three').css("display","none");
 		}
 		
-		/*
-		function tryjax(){
-			$.ajax({
-				type:'POST',
-				url:'includes/contact.form.php',
-				data:{name:name,email:email,message:message},
-				success: function(feedback_data){
-					alert(feedback_data);
-					
-					
-				}
-			});
-		}*/
 		if(name!=""){
 			if(name_pattern.test(name)){
 				if(email!=""){
@@ -68,23 +55,65 @@ $(document).ready(function(){
 											confirm_code = feedback_data;
 											
 											/*Now when the confirmcode form is submitted then it will check confirm code. If it matches then then an ajax call to contact.insert.php will be made. Else if it is zero or just else then return false*/
+											$("#confirm-submit").click(function(){
+												var code = $("#confirm-code-input").val();
+												if(code == confirm_code){
+													//alert('success');
+													$.ajax({
+														type:'POST',
+														url:'includes/contact.insert.php',
+														data:{name:name,email:email,message:message},
+														success:function(feedback){
+															if(feedback == 'success'){
+																/*change modal status*/
+																$("#contact-modal-header-h1").html("Thank you for contacting.");
+																$("#contact-modal-header-h2").html("");
+																modal_reset();
+																$('#modal-body-three').css("display","block");
+																$("#contact-modal-dp3-h2").html("Your message has been sent. I will contact you shortly.");
+																field_reset();
+															}else if(feedback == 'problem'){
+																/*change modal status*/
+																$("#contact-modal-header-h1").html("Sorry");
+																$("#contact-modal-header-h2").html("");
+																modal_reset();
+																$('#modal-body-three').css("display","block");
+																$("#contact-modal-dp3-h2").html("Your message could not be sent to the database.");
+																field_reset();
+															}
+														}
+													});
+										
+												}else{
+													//alert('problem');
+													$("#contact-modal-header-h1").html("Sorry");
+													$("#contact-modal-header-h2").html("");
+													modal_reset();
+													$('#modal-body-three').css("display","block");
+													$("#contact-modal-dp3-h2").html("Your message could not be sent to the database.");
+													field_reset();
+												}
+											});
 											
 										}
-										else if(feedback_data == 'Your message has been successfully sent. Thank you for contacting.')
+										else if(feedback_data == 'Found')
 										{
+											//alert("found");
 											$.ajax({
 												type:'POST',
 												url:'includes/contact.insert.php',
 												data:{name:name,email:email,message:message},
-												success: function(feedback_data){
-													if(feedback == 1){
+												success: function(feedback){
+													if(feedback == 'success'){
 														$("#contact-modal-header-h1").html("Thank you for contacting.");
+														$("#contact-modal-header-h2").html("");
 														modal_reset();
 														$('#modal-body-three').css("display","block");
 														$("#contact-modal-dp3-h2").html("Your message has been successfully sent. I will contact you shortly.");
 														field_reset();
-													}else if(feedback == 0){
+													}else if(feedback == 'failure'){
 														$("#contact-modal-header-h1").html("Something went wrong.");
+														$("#contact-modal-header-h2").html("");
 														modal_reset();
 														$('#modal-body-three').css("display","block");
 														$("#contact-modal-dp3-h2").html("Please send your message again.");
