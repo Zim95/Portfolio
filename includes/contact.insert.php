@@ -11,6 +11,6 @@
 	if($ci_obj->insert()){
 		echo 'success';
 	}else{
-		echo 'failure';
+		echo 'problem';
 	}
 ?>

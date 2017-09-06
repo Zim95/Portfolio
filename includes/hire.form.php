@@ -19,7 +19,7 @@
 		echo 'Invalid skills required pattern';
 	}else if($return_val == DB_FOUND){
 		/*This means ajax will make a call to contact.insert.php to insert data*/
-		echo 'Your message has been successfully sent. Thank you for contacting.';
+		echo 'Found';
 	}else if($return_val == MAIL_SENT){
 		/*This means first confirm code will be checked and if correct then ajax will call contact.insert.php*/
 		echo $hire_obj->random_number;

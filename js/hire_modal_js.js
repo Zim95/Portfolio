@@ -15,6 +15,7 @@ $(document).ready(function(){
 		var confirm_pattern = /^\d{4}$/;
 		
 		$("#hire-modal-header-h2").html("Please enter your credentials.");
+		
 		if(email!=""){
 			if(email_pattern.test(email)){
 				if(workdef!=""){
@@ -29,7 +30,6 @@ $(document).ready(function(){
 								$("#email-code").focus();
 								
 								//use ajax function here to contact.php
-								//tryjax();
 								$.ajax({
 									type:'POST',
 									url:'includes/hire.form.php',
@@ -41,37 +41,73 @@ $(document).ready(function(){
 											$("#hire-modal-header-h2").html("A confirmation code has been sent to your email. You will not have to repeat this step the next time you send a message with this email");
 											field_reset();
 											
+											$("#hire-modal-body-three").css("display","none");
+											$("#hire-modal-body-one").css("display","none");
+											$("#hire-modal-body-two").css("display","block");
+											
 											confirm_code = feedback;
 											
 											/*Now when the confirmcode form is submitted then it will check confirm code. If it matches then then an ajax call to contact.insert.php will be made. Else if it is zero or just else then return false*/
 											
 											/*now change modal body to body one which contains confirm code submitter*/
+											$("#hire-confirm-submit").click(function(){
+												var code = $("#hire-confirm-code-input").val();
+												if(code == confirm_code){
+													//alert('success');
+													$.ajax({
+														type:'POST',
+														url:'includes/hire.insert.php',
+														data:{email:email,workdef:workdef,skillsreq:skillsreq},
+														success:function(feedback){
+															if(feedback == 'success'){
+																/*change modal status*/
+																$("#hire-modal-header-h1").html("Thank you for hiring.");
+																$("#hire-modal-header-h2").html("");
+																$("#hire-modal-body-one").css("display","none");
+																$("#hire-modal-body-two").css("display","none");
+																$('#hire-modal-body-three').css("display","block");
+																$("#hire-modal-dp3-h2").html("Your message has been sent. I will contact you shortly.");
+																field_reset();
+															}else if(feedback == 'problem'){
+																/*change modal status*/
+																$("#hire-modal-header-h1").html("Sorry");
+																$("#hire-modal-header-h2").html("");
+																$("#hire-modal-body-one").css("display","none");
+																$("#hire-modal-body-two").css("display","none");
+																$('#hire-modal-body-three').css("display","block");
+																$("#contact-modal-dp3-h2").html("Your message could not be sent to the database.");
+																field_reset();
+															}
+														}
+													});
+											});
 											
 										}
-										else if(feedback == 'Your message has been successfully sent. Thank you for contacting.')
+										else if(feedback == 'Found')
 										{	
-											alert("Database ma vetyo abo insert garnu parcha");
-											/*
 											$.ajax({
 												type:'POST',
 												url:'includes/hire.insert.php',
-												data:{name:name,email:email,message:message},
+												data:{email:email,workdef:workdef,skillsreq:skillsreq},
 												success: function(feedback){
-													if(feedback == 1){
-														$("#contact-modal-header-h1").html("Thank you for contacting.");
-														modal_reset();
-														$('#modal-body-three').css("display","block");
-														$("#contact-modal-dp3-h2").html("Your message has been successfully sent. I will contact you shortly.");
+													if(feedback == 'success'){
+														$("#hire-modal-header-h1").html("Thank you for contacting.");
+														$("#hire-modal-body-one").css("display","none");
+														$("#hire-modal-body-two").css("display","none");
+														$('#hire-modal-body-three').css("display","block");
+														$("#hire-modal-dp3-h2").html("Your message has been successfully sent. I will contact you shortly.");
 														field_reset();
-													}else if(feedback == 0){
-														$("#contact-modal-header-h1").html("Something went wrong.");
-														modal_reset();
-														$('#modal-body-three').css("display","block");
-														$("#contact-modal-dp3-h2").html("Please send your message again.");
+													}else if(feedback == 'problem'){
+														$("#hire-modal-header-h1").html("Something went wrong.");
+														$("#hire-modal-body-one").css("display","none");
+														$("#hire-modal-body-two").css("display","none");
+														$('#hire-modal-body-three').css("display","block");
+														$('#hire-modal-body-three').css("display","block");
+														$("#hire-modal-dp3-h2").html("Please send your message again.");
 														field_reset();
 													}
 												}
-											});*/
+											});
 										}else{
 											
 											/*change modal status*/
