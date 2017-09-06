@@ -90,7 +90,7 @@ $(document).ready(function(){
 													$("#contact-modal-header-h2").html("");
 													modal_reset();
 													$('#modal-body-three').css("display","block");
-													$("#contact-modal-dp3-h2").html("Your message could not be sent to the database.");
+													$("#contact-modal-dp3-h2").html("That is not the code. Please try again.");
 													field_reset();
 												}
 											});

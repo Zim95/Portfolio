@@ -80,16 +80,24 @@ $(document).ready(function(){
 															}
 														}
 													});
+												}else{
+													$("#hire-modal-header-h1").html("Sorry");
+													$("#hire-modal-header-h2").html("");
+													$("#hire-modal-body-one").css("display","none");
+													$("#hire-modal-body-two").css("display","none");
+													$('#hire-modal-body-three').css("display","block");
+													$("#contact-modal-dp3-h2").html("That is not the code. Please retry.");
+													field_reset();
+												}	
 											});
 											
-										}
-										else if(feedback == 'Found')
-										{	
+										}else if(feedback == 'Found'){	
 											$.ajax({
 												type:'POST',
 												url:'includes/hire.insert.php',
 												data:{email:email,workdef:workdef,skillsreq:skillsreq},
 												success: function(feedback){
+													//alert(feedback);
 													if(feedback == 'success'){
 														$("#hire-modal-header-h1").html("Thank you for contacting.");
 														$("#hire-modal-body-one").css("display","none");

@@ -1,9 +1,9 @@
 <?php
-	class contactInsert{
-		private $email,$workdef,$skillsreq;
+	class hireInsert{
+		private $email,$workdef,$skillsreq,$conn;
 		
 		function __construct($email,$workdef,$skillsreq){
-			$this->email = $name;
+			$this->email = $email;
 			$this->workdef = $workdef;
 			$this->skillsreq = $skillsreq;
 			
@@ -21,7 +21,7 @@
 		} 
 		
 		function insert(){
-			$statement = $this->conn->prepare("INSERT INTO hire (email,workdef,skillsreq) VALUES (:email,:workdef,:skillsreq)");
+			$statement = $this->conn->prepare("INSERT INTO hire (email,work,skills) VALUES (:email,:workdef,:skillsreq)");
 			
 			$statement->bindParam(':email',$this->email,PDO::PARAM_STR);
 			$statement->bindParam(':workdef',$this->workdef,PDO::PARAM_STR);

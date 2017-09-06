@@ -50,8 +50,6 @@
 						<h1 id="header2">Contact me</h1>
 						<h2 class="semi2">To contact me, you can visit my contacts page. You can also visit my social media profiles (add me as a friend).</h2>
 						
-						<!--This is not working-->
-						<a class="btn btn-default" id="contact-btn" href="#content_contact">Contact Me</a>
 					</div>
 				</div>
 				<div class="item">
@@ -424,7 +422,7 @@
 										<h1 align="center" style="font-size:1.2em;">Bootstrap</h1>
 										<img src="img/bootstrap-logo.png" class="img-thumbnail" alt="Responsive Design" width="70%" height="190" style="border-radius:70%;position:relative;left:15%;"/>
 										<div style="margin-top:30px;">
-											<h2 align="center" style="font-size:1.0em;">Twitter Bootstrap is a great way to use the grid system for a responsive design. It can easily create a layout of any website. It also comes in with a lot of existing components that are all responsive and easy to implement as well as modify. It greatly reduces development time and best of all its free and open source.</h2>
+											<h2 align="center" style="font-size:1.0em;">I like to use Twitter bootstrap for creating responsive design. I like using it's built in functionalities as it reduces development time and is easy to customize.</h2>
 										</div>
 									</div>
 									<div class="col-xs-12 col-sm-12 col col-md-12 col-lg-3" id="java_script" style="height:370px;background:#bdc3c7;overflow:scroll;overflow-x:hidden;margin:2%;">
@@ -438,7 +436,7 @@
 										<h1 align="center" style="font-size:1.2em;">JQuery</h1>
 										<img src="img/jquery-logo.png" class="img-thumbnail" alt="Responsive Design" width="70%" height="190" style="border-radius:70%;position:relative;left:15%;"/>
 										<div style="margin-top:30px;">
-											<h2 align="center" style="font-size:1.0em;">JQuery is a client side framework of javascript. It performs all client side activities performed by javascript and is easier to write. It also solves all the cross browser issues of Javascript. It also comes with some additional built-in functionalities and libraries. It is also an open-source framework and can easily be downloaded form their official website.</h2>
+											<h2 align="center" style="font-size:1.0em;">JQuery is a client side framework of javascript. I prefer using jQuery because it performs all client side activities performed by javascript and is easier to write, it also solves all the cross browser issues of Javascript, it also comes with some additional built-in functionalities and libraries and it is also an open-source framework and can easily be downloaded form their official website.</h2>
 										</div>
 									</div>
 									<div class="col-xs-12 col-sm-12 col col-md-12 col-lg-3" id="react_js" style="height:370px;background:#bdc3c7;overflow:scroll;overflow-x:hidden;margin:2%;">
@@ -469,7 +467,7 @@
 										<h1 align="center" style="font-size:1.2em;">MySQL</h1>
 										<img src="img/mysql-logo.jpg" class="img-thumbnail" alt="Responsive Design" width="70%" height="190" style="border-radius:70%;position:relative;left:15%;"/>
 										<div style="margin-top:30px;">
-											<h2 align="center" style="font-size:1.0em;">MySql is a relational database management system for storing data of a website. It supports object oriented as well as procedural oriented format. It can also be used with PDO(PHP Data Objects). It is the most frequently used database storage system with PHP.</h2>
+											<h2 align="center" style="font-size:1.0em;">MySql is a relational database management system for storing data of a website. It supports object oriented as well as procedural oriented syntax. It can also be used with PDO(PHP Data Objects). It is the most frequently used database storage system with PHP.</h2>
 										</div>
 									</div>
 									<div class="col-xs-12 col-sm-12 col col-md-12 col-lg-3" id="java_script" style="height:370px;background:#bdc3c7;overflow:scroll;overflow-x:hidden;margin:2%;">
@@ -565,7 +563,7 @@
 										<h1 align="center" style="font-size:1.2em;">Github</h1>
 										<img src="img/git-logo.png" class="img-thumbnail" alt="Responsive Design" width="70%" height="190" style="border-radius:70%;position:relative;left:15%;"/>
 										<div style="margin-top:30px;">
-											<h2 align="center" style="font-size:1.0em;">Github is the open-source version control website. Here, one can post their code, branch them, have others work ont them and merge changes made by others to the work. It provides a great way for many people to work on huge projects. It also serves as a safe place for one's code. Also it saves all the different save-points so that one can checkout previous checkpoints, remove or add versions.</h2>
+											<h2 align="center" style="font-size:1.0em;">Github is an open-source version control platform. I learned github to save my code. I like to use it to look at other's codes, projects. Also it saves different versions of the work allowing me to go back and forth betweeen changes.</h2>
 											<h2 align="center" style="font-size:1.0em;margin-top:10px;padding:5px;">Visit my github profile here: <a href="https://github.com/Zim95">https://github.com/Zim95</a></h2>
 										</div>
 									</div>
@@ -827,6 +825,7 @@
 						<div class="col-sm-12">
 							<h1 align="center">PageHits</h1>
 							<div class="graph">
+								<h2 align="center" style="margin-top:20px;">This area is under construction.</h2>
 							</div>
 						</div>
 					</div>
@@ -859,8 +858,15 @@
 							<h2 align="center" style="font-size:1.3em;margin-top:20px;padding:20px;">First five hirers will get a 50% discount.</h2>
 						</div>
 					</div>
+					<div class="row">
+						<h2 align="center" style="font-size:1.3em;margin-top:20px;padding:20px;">Please turn on javascript in your browser for this site to work.</h2>
+					</div>
+					<div class="row">
+						<h2 align="center" style="font-size:1.3em;margin-top:10px;padding:10px;">This site uses a 3rd party software to send emails. I am looking for a new smtp server. Please bear with me.</h2>
+					</div>
 				</div>
 			</div>
+			
 		</footer>
 		<!--jquery import-->
 		<script src="js/jquery.js"></script>

@@ -6,7 +6,7 @@
 	$workdef = $_POST['workdef'];
 	$skillsreq =$_POST['skillsreq'];
 	
-	$hi_obj = new contactInsert($email,$workdef,$skillsreq);
+	$hi_obj = new hireInsert($email,$workdef,$skillsreq);
 	
 	if($hi_obj->insert()){
 		echo 'success';
