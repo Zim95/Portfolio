@@ -709,13 +709,13 @@
 					<div class="row" id="contact-footer">
 						<h1 align="center" style="font-size:1.8em;">I am Social</h1>
 						<div class="col-xs-3 col-sm-3 col-sm-offset-3">
-							<a class="fa fa-facebook" href="#"></a>
+							<a class="fa fa-facebook" href="https://www.facebook.com/namah.shrestha.58"></a>
 						</div>
 						<div class="col-xs-3 col-sm-3">
-							<a class="fa fa-google" href="#"></a>
+							<a class="fa fa-google" href="https://plus.google.com/114804888205115302684"></a>
 						</div>
 						<div class="col-xs-3 col-sm-3">
-							<a class="fa fa-github" href="#"></a>
+							<a class="fa fa-github" href="https://github.com/Zim95"></a>
 						</div>
 					</div>
 				</div>
