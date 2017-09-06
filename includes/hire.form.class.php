@@ -51,13 +51,13 @@
 		}
 		public function phpmailer($email,$subject,$rand){
 			$this->mails->IsSMTP();
-			$this->mails->Mailer = "smtp";
-			$this->mails->Host = "mail.smtp2go.com";
+			//$this->mails->Mailer = "smtp";
+			$this->mails->Host = "smtp.gmail.com";
 			$this->mails->Port = "587"; // 8025, 587 and 25 can also be used. Use Port 465 for SSL.
 			$this->mails->SMTPAuth = true;
 			$this->mails->SMTPSecure = 'tls';
-			$this->mails->Username = "shresthanamah@gmail.com";
-			$this->mails->Password = "4fuT2pfs7QHR";
+			$this->mails->Username = "devworks95@gmail.com";
+			$this->mails->Password = "0907namah";
 
 			$this->mails->From = "devworks95@gmail.com";	
 			$this->mails->FromName = "Namah Shrestha";
